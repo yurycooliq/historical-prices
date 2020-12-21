@@ -1,0 +1,17 @@
+{
+  "name": "historical-prices",
+  "version": "0.0.1",
+  "description": "Collect tokens and coins prices from different sources",
+  "main": "index.js",
+  "scripts": {
+    "add-tokens": "node src/add_tokens.js"
+  },
+  "author": "Yury Cooliq",
+  "license": "WTFPL",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ethereum-block-by-date": "^1.2.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
