@@ -29,13 +29,12 @@ const insertTokensToDB = () => {
         if (err) {
             throw err
         }
-        console.log("Connected!");
         const sql = "INSERT INTO tokens (address, decimals, label, symbol) VALUES ?"
         db.query(sql, [tokens], function (err, result) {
             if (err) {
-                throw err;
+                throw err
             }
-            console.log("Number of records inserted: " + result.affectedRows);
+            console.log(`Inserted ${result.affectedRows} tokens!`)
         });
     });
 }
@@ -44,7 +43,6 @@ const addTokens = () => {
     console.log(`Adding first ${MAX_TOKENS} tokens to DB...`)
     getTokens()
     insertTokensToDB()
-    console.log('Tokens successfully added!')
 }
 
 addTokens()
