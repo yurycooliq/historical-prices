@@ -134,7 +134,6 @@ const init = async () => {
         const token = tokensList[num]
         await getTokenHistoricalPrices(token.id, token.symbol)
     }
-
 }
 
-init().then(() => console.log('Done.'))
+init().then(() => process.exit())
