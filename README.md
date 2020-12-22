@@ -7,7 +7,7 @@
 2. Coingecko
 `npm run coingecko`
 3. Uniswap
-   `npm run uniswap`
+`npm run uniswap`
    
 ## DB
 #### tokens
@@ -22,4 +22,11 @@
 - price_usd - double(20,10)
 - volume - double(30,10)
 - was_at - datetime
+- created_at - datetime
+
+#### uniswap_daily
+- id - bigint
+- price_usd - double(20,10)
+- volume - double(30,10)
+- was_at - date
 - created_at - datetime
